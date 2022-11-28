@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <!-- doesn't allowed through validator
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
+
 <body>
     <div id="container">
      
@@ -24,7 +26,7 @@
    <div class="form">
     <div class="card card-1">
         <div class="picture">
-            <img src="bild/Girl in a white.jpg" alt=" picture" width="360" height="420">
+            <img src="bild/Girl_in_a_white.jpg" alt=" picture" width="360" height="420">
         
         </div>
     </div>
@@ -56,34 +58,34 @@
       <!-- Modal content -->
     <h2>Contact form</h2>
 
-  <form action="bild" method="post">
+<form action="/action_page.php" method="post">
   <div class="imgcontainer">
     <img src="bild/logo_olga.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="modal-container">
-    <label for="uname"><b>Name</b></label>
+    <label id="uname"><b>Name</b></label>
     <input type="text" placeholder="Enter name" name="uname" required>
 
-    <label for="psw"><b>E-mail</b></label>
+    <label id="psw"><b>E-mail</b></label>
     <input type="password" placeholder="Enter Email" name="psw" required>
         
-    <button id="mySubmit" type ="mySubmit">Submit</button>
+    <button id="mySubmit" type ="Submit">Submit</button>
   </div>
+</form>
 
+    </div>
+    </div>
+    
 
-  </div>
-  </div>
-  </div>
-
+</div>
 </div>
 </div>
 
     <div class="footer">
         <p>Olga Bulanenkova <br> © Webbdesign and marketing. 2022</p> 
         </div>
-      
-   <script src="js/modal.js"></script>
+        <script type="module" src="js/modal.js"></script>
 
 </body>
 </html>
